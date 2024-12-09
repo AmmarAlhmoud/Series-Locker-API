@@ -34,6 +34,7 @@ const limitRequests = rateLimit({
   // limit exceeded message
   message:
     "You have reached the maximum limit of requests for this IP. try again in hour",
+  proxy: true,
 });
 // just apply the limit to the /api endpoint and what comes after it.
 app.use("/api", limitRequests);
