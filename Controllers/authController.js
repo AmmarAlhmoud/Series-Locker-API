@@ -141,7 +141,7 @@ exports.forgotPassword = catchAsync(async (req, res, next) => {
   //   "host"
   // )}/api/v1/users/resetPassword/${resetToken}`;
 
-  const resetUrl = `${process.env.HOST_URL}/new-password/${resetToken}`;
+  const resetUrl = `${process.env.HOST_URL}new-password/${resetToken}`;
 
   const message = `Hi ${user.username},\n\nWe received a request to reset your password for your account. Click the link below to reset it:\n\n${resetUrl}\n\nIf you didn’t request a password reset, you can safely ignore this email. This link will expire in 10 minutes.\n\nFor security purposes, please do not share this link with anyone.\n\nIf you have any questions, feel free to contact us at ${process.env.USER_EMAIL}.\n\nBest regards,\n\n\nSeries Locker`;
 
