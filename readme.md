@@ -205,6 +205,6 @@ Deploy to Render with Node v20.11.1 and configure environment variables.[1]
 
 ***
 ## License
-This project is licensed under the ISC License — see LICENSE file for details.​
+This project is licensed under the ISC License.​
 ***
 **Built with ❤️ by Ammar Alhmoud** — Series tracking made simple.
